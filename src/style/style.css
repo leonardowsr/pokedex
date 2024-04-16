@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-search {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+input {
+  color: black;
+  font-size: 20px;
+  outline-style: none;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
+.poke-container {
+  background-color: crimson;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 650px;
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+form button {
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: gray;
+  padding: 5px;
+}
+.allButtons {
+  display: flex;
+}
+form button:hover {
+  background-color: gray;
+  color: white;
+}
+.inital-info-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.title-pokedex {
+  margin: 10px;
+  font-size: 40px;
+}
+.poke-container h1 {
+  font-size: 30px;
+  color: yellow;
+  text-shadow: 1px 1px black;
+  max-width: 650px;
+}
+.imagem-principal {
+  background-color: rgba(0, 0, 0, 0.425);
+  width: 300px;
+  height: 300px;
+  margin-top: 10px;
+}
+.img-container {
+  width: 300px;
+  height: 300px;
+  padding: 5px;
+}
+.description-poke {
+  margin-bottom: 10px;
+  height: 100%;
+}
+
+.description-poke p {
+  height: 100px;
+  font-size: 17px;
+}
+span {
+  display: block;
+}
+
+.otherInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  background-color: rgb(15, 78, 121);
+  padding: 20px;
+  border-radius: 5px;
+}
+.otherInfor-title {
+  color: yellow;
+  padding: 3px;
+}
+.tipo-fraqueza {
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pokemons-team {
+  position: absolute;
+  left: 3%;
+  top: 10%;
+  font-size: 30px;
+}
+.pokemons-team li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.container-lista {
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.historico:hover {
+  background-color: gray;
+  color: white;
+}
+
+.modalChampion {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: crimson;
+}
+.modalContainer {
+  position: absolute;
+  text-align: center;
+  max-width: 600px;
+}
+
+.modal-close {
+  position: relative;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+  left: 90%;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  color: crimson;
+  cursor: pointer;
+  font-size: 20px;
+}
+.video-container video {
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
+
+.description-poke {
+  margin-top: 20px;
+}
+.otherInfo {
+  width: 50%;
+  margin: -5% auto;
+}
+
+.pikachu-gif {
+  width: 100%;
+}
+.buttons-form {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.ash-champion {
+  display: flex;
+  padding: 10px;
+  background: white;
+  color: crimson;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-items: center;
+}
+.ash-champion:hover {
+  background-color: crimson;
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  .inital-info-container {
+    display: block;
+    text-align: center;
+  }
+  .poke-container {
+    margin: auto;
+    width: 80%;
+  }
+  .modalContainer {
+    max-width: 310px;
+  }
+  button {
+    transition: all 0.3;
+  }
+  .inital-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .div-content-pikachu {
+    width: 90%;
+    margin: auto;
+  }
+  .poke-container {
+    width: 80%;
+    height: 90%;
+  }
+  .title-pokedex {
+    font-size: 27px;
+  }
+  .section-search h2 {
+    font-size: 20px;
+  }
+  .section-search {
+    padding: 10px;
+    gap: 10px;
+  }
+  form {
+    display: block;
+    text-align: center;
+  }
+  form input {
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .tipo-fraqueza {
+    gap: 10px;
+  }
+  .section-search h2 {
+    text-align: center;
+  }
+  .img-container {
+    width: 250px;
+    height: 250px;
+  }
+  .imagem-principal {
+    width: 250px;
+    height: 250px;
+  }
+  .description-poke p {
+    font-size: 15px;
+    height: 60px;
+  }
+  .otherInfo {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .otherInfo span {
+    font-size: 15px;
+    padding: 0;
+  }
+  .tipo-fraqueza {
+    margin-top: -10px;
+    gap: 0;
+    font-size: 15px;
+  }
+  .pokemons-team {
+    background-color: rgba(0, 0, 0, 0.747);
+  }
+  .pokemons-team h5 {
+    font-size: 15px;
+    padding: 5px;
+    color: yellow;
+  }
+  .pokemons-team ul {
+    gap: 0;
+  }
+  .pokemons-team ul img {
+    width: 50px;
+  }
+  .main-content {
+    text-align: center;
+  }
+}
